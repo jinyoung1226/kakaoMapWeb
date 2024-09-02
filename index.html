@@ -17,8 +17,8 @@
       }
       #category {
         position: absolute;
-        top: 10px;
-        left: 10px;
+        top: -7px;
+        left: -7px;
         border-radius: 5px;
         border: 1px solid #909090;
         box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
@@ -29,7 +29,7 @@
       #category li {
         float: left;
         list-style: none;
-        width: 80px; /* 너비를 두 배로 키움 */
+        width: 100px; /* 너비를 두 배로 키움 */
         border-right: 1px solid #acacac;
         padding: 24px 48px; /* 패딩을 두 배로 키움 */
         text-align: center;
@@ -38,7 +38,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-size: 20px; /* 글씨 크기를 조금 키움 */
+        font-size: 30px; /* 글씨 크기를 조금 키움 */
       }
       
       #category li.on {
@@ -52,8 +52,8 @@
       #category li span {
         display: block;
         margin: 0 auto 3px;
-        width: 50px;
-        height: 50px;
+        width: 70px;
+        height: 70px;
         background-size: contain;
       }
       
@@ -297,7 +297,7 @@
             imageSrc = 'https://example.com/default-marker.png'; // 기본 이미지 URL
         }
 
-        var imageSize = new kakao.maps.Size(36, 36), // 마커 이미지의 크기
+        var imageSize = new kakao.maps.Size(50, 50), // 마커 이미지의 크기
           markerImage = new kakao.maps.MarkerImage(
             imageSrc,
             imageSize
